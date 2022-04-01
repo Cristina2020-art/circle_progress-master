@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing:border-box;
+}
+$arvo:'Arvo';
+$roboto:'Roboto';
+$cursive_font:'Satisfy';
+$round:'Varela Round';
+$styled:'Abril Fatface';
+$primery_color:#f53b50;
+$light_color:#fbf7f8; 
+$white:#fff;
+$bg_color:#22262d;
+$fill_color:#121617;
+
+body{
+  background-color:$bg_color;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100vh;
+  flex-direction: column;
+}
+h2{
+  font-family: $styled;
+  font-size:60px;
+  font-weight:normal;
+  color:#ffc107;
+  letter-spacing: 5px;
+  margin-bottom:30px;
+}
+.flex_{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_item{
+  margin:0 15px;
+}
+.circle_progress{
+  display:block;
+  width:120px;
+}
+.circle_path{
+  fill:$fill_color;
+  animation:progress 1s forwards;
+  stroke-linecap: round;
+  stroke-width: 2.8;
+  stroke:#ffc107;
+}
+.circle_text{
+  font-size:7px;
+  font-weight:600;
+  text-anchor:middle;
+  dominant-baseline:middle;
+  fill:#ffc107;
+}
+@keyframes progress{
+  0%{
+    stroke-dasharray: 0 100;
+  }
+}
